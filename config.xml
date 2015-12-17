@@ -70,6 +70,18 @@
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+     <platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    <splash src="www/res/android/screen-hdpi-portrait.png" density="land-hdpi"/>
+    <splash src="www/res/android/screen-ldpi-portrait.png" density="land-ldpi"/>
+    <splash src="www/res/android/screen-mdpi-portrait.png" density="land-mdpi"/>
+    <splash src="www/res/android/screen-xhdpi-portrait.png" density="land-xhdpi"/>
+
+    <splash src="www/res/android/screen-hdpi-portrait.png" density="port-hdpi"/>
+    <splash src="www/res/android/screen-ldpi-portrait.png" density="port-ldpi"/>
+    <splash src="www/res/android/screen-mdpi-portrait.png" density="port-mdpi"/>
+    <splash src="www/res/android/screen-xhdpi-portrait.png" density="port-xhdpi"/>
+</platform>
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
