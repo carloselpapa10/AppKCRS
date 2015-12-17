@@ -192,7 +192,7 @@
 	    <ons-list-item ng-repeat="sServicios in servicios" modifier="chevron" class="list-item-container" ng-click="form_comentario(myNavigator,sServicios)">
                 <ons-row>
                   <ons-col width="95px">
-                    <img src="{{url.defecto}}kcrs_servidor/images/kcrs.jpg" class="thumbnail">
+                    <img src="{{url.defecto}}kcrs_servidor/images/logo.png" class="thumbnail">
                   </ons-col>
                   <ons-col>
                     <div class="name">
@@ -257,7 +257,7 @@
 	
 	<ons-row class="profile-wrapper">
         <ons-col width="60px" class="profile-image-wrapper">
-          <img src="img/kcrs.jpg" class="profile-image">
+          <img src="{{url.defecto}}kcrs_servidor/images/logo.png" class="profile-image">
         </ons-col>
 
         <ons-col>
@@ -352,8 +352,9 @@
         <p class="note" id="comentario">Genere su servicio.</p>
     </div>
     
-    <div class="content-padded">
-        <ons-button modifier="large" ng-click="generar_servicio(myNavigator)">
+	<img id="myImg_srvcio" src="img/preloader-01.gif" align="center" style="visibility: hidden;">
+    <div class="content-padded" id="envia_servicio">
+		<ons-button modifier="large" ng-click="generar_servicio(myNavigator)">
         Enviar
       </ons-button>
     </div>
