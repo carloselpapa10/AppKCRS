@@ -70,7 +70,7 @@ app.controller("AppController", function($scope, $http) {
             });
     }
     
-    $scope.cambiaImg();
+    //$scope.cambiaImg();
     
 	$scope.autologin = function () {
 			if(localStorage.getItem("sIdentificacion") != null && localStorage.getItem("sPassword") != null){
